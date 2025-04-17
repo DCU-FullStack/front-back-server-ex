@@ -26,9 +26,9 @@ const NavItem = ({ icon, label, href, isActive = false, onClick }: NavItemProps)
       <a
         onClick={onClick}
         className={cn(
-          "flex items-center py-3 px-4 text-white rounded transition-colors duration-200 ease-in-out",
+          "flex items-center py-3 px-4 text-black rounded transition-colors duration-200 ease-in-out",
           isActive 
-            ? "bg-primary" 
+            ? "bg-lavender" 
             : "hover:bg-secondary"
         )}
       >
@@ -50,11 +50,11 @@ export function Sidebar() {
 
   return (
     <aside className={cn(
-      "bg-secondary-dark text-white flex flex-col h-screen",
+      "bg-secondary-dark text-black flex flex-col h-screen",
       isExpanded ? "w-64" : "w-16"
     )}>
       <div className="p-4 flex items-center justify-center md:justify-start">
-        <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8 text-black" fill="none" viewBox="0 0 24 24" stroke="currentColor">
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7h12m0 0l-4-4m4 4l-4 4m0 6H4m0 0l4 4m-4-4l4-4" />
         </svg>
         {isExpanded && (
@@ -99,14 +99,14 @@ export function Sidebar() {
       
       <div className="p-4 border-t border-gray-700">
         <Link href="/settings">
-          <a className="flex items-center py-2 text-white hover:text-gray-300 transition-colors duration-200 ease-in-out">
+          <a className="flex items-center py-2 text-black hover:text-gray-700 transition-colors duration-200 ease-in-out">
             <Settings className="h-5 w-5" />
-            {isExpanded && <span className="ml-3 hidden md:block">설정</span>}
+            {isExpanded && <span className="ml-3 hidden md:block">마이페이지</span>}
           </a>
         </Link>
         <button 
           onClick={handleLogout}
-          className="mt-2 flex items-center py-2 text-white hover:text-gray-300 transition-colors duration-200 ease-in-out w-full"
+          className="mt-2 flex items-center py-2 text-black hover:text-gray-700 transition-colors duration-200 ease-in-out w-full"
         >
           <LogOut className="h-5 w-5" />
           {isExpanded && <span className="ml-3 hidden md:block">로그아웃</span>}

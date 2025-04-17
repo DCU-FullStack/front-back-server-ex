@@ -9,6 +9,8 @@ import Dashboard from "@/pages/dashboard";
 import CCTVPage from "@/pages/cctv-page";
 import IncidentsPage from "@/pages/incidents-page";
 import TasksPage from "@/pages/tasks-page";
+import AnalyticsPage from "./pages/analytics-page";
+import SettingsPage from "./pages/settings-page";
 
 function Router() {
   return (
@@ -17,6 +19,8 @@ function Router() {
       <ProtectedRoute path="/cctv" component={CCTVPage} />
       <ProtectedRoute path="/incidents" component={IncidentsPage} />
       <ProtectedRoute path="/tasks" component={TasksPage} />
+      <ProtectedRoute path="/analytics" component={AnalyticsPage} />
+      <ProtectedRoute path="/settings" component={SettingsPage} />
       <Route path="/auth" component={AuthPage} />
       <Route component={NotFound} />
     </Switch>

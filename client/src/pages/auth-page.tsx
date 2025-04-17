@@ -74,11 +74,7 @@ export default function AuthPage() {
           <TabsContent value="login">
             <Card className="w-full">
               <CardHeader className="space-y-1">
-                <div className="flex justify-center mb-6">
-                  <svg xmlns="http://www.w3.org/2000/svg" className="h-12 w-12 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 19l-7-7 7-7m8 14l-7-7 7-7" />
-                  </svg>
-                </div>
+                
                 <CardTitle className="text-2xl text-center">스마트 도로 이상감지 시스템</CardTitle>
                 <CardDescription className="text-center">
                   로그인 정보를 입력하여 시스템에 접속하세요.

@@ -49,7 +49,7 @@ export default function Dashboard() {
               </div>
               
               {/* Quick Action Buttons */}
-              <div className="flex mt-4 justify-center space-x-3">
+              <div className="flex mt-4 justify-center space-x-10">
                 <Button 
                   className="bg-purple-600 hover:bg-purple-700 rounded-full"
                   onClick={() => navigate('/cctv')}
@@ -60,13 +60,13 @@ export default function Dashboard() {
                   className="bg-purple-600 hover:bg-purple-700 rounded-full"
                   onClick={() => navigate('/incidents')}
                 >
-                  사고
+                  이상 보고
                 </Button>
                 <Button 
                   className="bg-purple-600 hover:bg-purple-700 rounded-full"
                   onClick={() => navigate('/tasks')}
                 >
-                  업무 리스트
+                  작업 목록
                 </Button>
               </div>
             </div>
